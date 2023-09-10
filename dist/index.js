@@ -11,7 +11,7 @@ function getPermissionMessages(functionality, purpose) {
     const message = messages_1.default[functionality] || undefined;
     if (!message) {
         return {
-            deniedMessage: `You denied access to the ${functionality}.`,
+            deniedMessage: `Permission to ${functionality} was denied.`,
             purpose: purpose ||
                 `Please allow access to the ${functionality} to use this feature.`,
             steps: [],

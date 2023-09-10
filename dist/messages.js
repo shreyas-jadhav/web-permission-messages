@@ -14,7 +14,7 @@ const IMAGES = {
 };
 const messages = {
     microphone: {
-        deniedMessage: "You denied access to the microphone. Please allow access to the microphone to use this feature.",
+        deniedMessage: "Permission to Microphone was denied. Please allow access to the microphone to use this feature.",
         steps: [
             // ios / safari
             {
@@ -75,7 +75,7 @@ const messages = {
         ],
     },
     location: {
-        deniedMessage: "You denied access to the location. Please allow access to the location to use this feature.",
+        deniedMessage: "Permission to location was denied. Please allow access to the location to use this feature.",
         steps: [
             // ios / safari
             {
