@@ -1,5 +1,5 @@
 {
-  "name": "web-permission-notfications",
+  "name": "web-permission-messages",
   "version": "1.0.0",
   "description": "Messages and steps when permissions on web are denied",
   "main": "dist/index.js",
