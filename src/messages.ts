@@ -4,9 +4,10 @@ const IMAGES = {
   iosMicrophone: "ios-microphone.jpeg",
   iosLocation: "ios-location.jpeg",
   iosAllow: "ios-allow.jpeg",
-  androidSettings: "android-settings.jpeg",
-  androidPermissions: "android-permissions.jpeg",
-  androidAllow: "android-allow.jpeg",
+  androidLockIcon: "android-lock-icon.png",
+  androidPermissions: "android-select-permissions.png",
+  androidPermissionList: "android-select-required-permission.png",
+  androidAllow: "android-change-to-allow.png",
   osxFirefoxAllow: "os-x-firefox-allow.png",
   osxFirefoxPreferencesIcon: "os-x-firefox-preferences-icon.png",
 };
@@ -46,17 +47,20 @@ const messages = {
         browser: "chrome",
         steps: [
           {
-            message:
-              "Open the Settings app on your phone and go to Apps and notifications. Scroll down to locate Chrome on the app list.",
-            imageName: IMAGES.androidSettings,
+            message: "Select the Lock icon in the address bar.",
+            imageName: IMAGES.androidLockIcon,
           },
           {
-            message:
-              "Next, go to Permissions. Here, you’ll find a list of permissions for Chrome.",
+            message: "Next, go to Permissions. ",
             imageName: IMAGES.androidPermissions,
           },
           {
-            message: "Tap on Microphone and select Allow.",
+            message:
+              "Here, you’ll find a list of permissions for Chrome. Tap on Microphone.",
+            imageName: IMAGES.androidPermissionList,
+          },
+          {
+            message: "Change to Allow.",
             imageName: IMAGES.androidAllow,
           },
         ],
@@ -112,17 +116,20 @@ const messages = {
         browser: "chrome",
         steps: [
           {
-            message:
-              "Open the Settings app on your phone and go to Apps and notifications. Scroll down to locate Chrome on the app list.",
-            imageName: IMAGES.androidSettings,
+            message: "Select the Lock icon in the address bar.",
+            imageName: IMAGES.androidLockIcon,
           },
           {
-            message:
-              " Next, go to Permissions. Here, you’ll find a list of permissions for Chrome.",
+            message: "Next, go to Permissions. ",
             imageName: IMAGES.androidPermissions,
           },
           {
-            message: "Tap on Location and select Allow.",
+            message:
+              "Here, you’ll find a list of permissions for Chrome. Tap on Location.",
+            imageName: IMAGES.androidPermissionList,
+          },
+          {
+            message: "Change to Allow.",
             imageName: IMAGES.androidAllow,
           },
         ],
