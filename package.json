@@ -1,6 +1,6 @@
 {
   "name": "web-permission-messages",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Messages and steps when permissions on web are denied",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
