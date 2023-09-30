@@ -6,9 +6,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.getPermissionMessages = void 0;
 const platform_1 = __importDefault(require("platform"));
 const messages_1 = __importDefault(require("./messages"));
-function getPermissionMessages(functionality, purpose) {
+function getPermissionMessages(functionality, 
+// options
+{ purpose, locale = "en", }) {
     // detect platform and browser
-    const message = messages_1.default[functionality] || undefined;
+    const message = (0, messages_1.default)(locale)[functionality] || undefined;
     if (!message) {
         return {
             deniedMessage: `Permission to ${functionality} was denied.`,

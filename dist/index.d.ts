@@ -1,5 +1,8 @@
 export type Funcionality = "microphone" | "location";
-export declare function getPermissionMessages(functionality: Funcionality, purpose?: string): {
+export declare function getPermissionMessages(functionality: Funcionality, { purpose, locale, }: {
+    purpose?: string;
+    locale?: "en" | "es";
+}): {
     deniedMessage: string;
     purpose: string;
     steps: never[];

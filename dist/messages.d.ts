@@ -1,4 +1,4 @@
-declare const messages: {
+declare const messages: (locale: string) => {
     microphone: {
         deniedMessage: string;
         steps: {

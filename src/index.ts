@@ -4,11 +4,18 @@ export type Funcionality = "microphone" | "location";
 
 export function getPermissionMessages(
   functionality: Funcionality,
-  purpose?: string
+  // options
+  {
+    purpose,
+    locale = "en",
+  }: {
+    purpose?: string;
+    locale?: "en" | "es";
+  }
 ) {
   // detect platform and browser
 
-  const message = messages[functionality] || undefined;
+  const message = messages(locale)[functionality] || undefined;
 
   if (!message) {
     return {
